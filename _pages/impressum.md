@@ -1,10 +1,10 @@
 ---
-layout: page
-title:  Impressum
-subtitle:  Alle rechtlichen Informationen
-permalink: /impressum/
-menu-position: footer
-header-img: section-header-3.jpg
+layout:         page
+title:          Impressum
+subtitle:       Alle rechtlichen Informationen
+permalink:      /impressum/
+menu-position:  footer
+header-img:     section-header-3.jpg
 ---
 
 <ul class="o-list-bare">

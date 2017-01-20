@@ -3,7 +3,7 @@ layout: page
 title: Gewerbe
 subtitle: Alle sehen beschäftigt aus
 permalink: /gewerbe/
-menu-position: header
+menu-position:
 header-img: section-header-5.jpg
 ---
 

@@ -8,47 +8,57 @@
 
     .c-section__header {
         @include font(secondary);
-        font-size: 120%;
-        font-weight: 300;
     }
 
         .c-section__image {
-            overflow: hidden;
-
-            > * {
-                position: relative;
-            }
-
-            img {
-                width: 100%;
-                z-index: 10;
-            }
+            position: relative;
         }
 
-            .c-section__image-inner {
-                background-color: rgba($color-primary, .3);
-                margin-top: -5%;
-                padding-top: 5%;
-                z-index: 11;
+            .c-section__image-container img,
+            .c-section__image-overlay {
+                position: absolute;
+                top: 50%;
             }
 
-        .c-section__title {
-            background-color: $color-primary;
-            color: $color-white;
-            padding: $unit / 2;
-            text-align: center;
-
-            * {
-                line-height: 1;
-                margin-bottom: 0;
+            .c-section__image-container {
+                img {
+                    transform: translateY(-40%);
+                }
             }
 
-            hr {
-                border-color: $color-white;
-                margin: $unit / 8 auto $unit / 4;
-                width: 30%;
+            .c-section__image-overlay {
+                background-color: rgba($color-black, .75);
+                color: $color-white;
+                text-align: center;
+                transform: translateY(-50%);
+
+                &::after {
+                    background-color: rgba($color-black, .2);
+                    bottom: -2px;
+                    content: '';
+                    height: 2px;
+                    left: 0;
+                    position: absolute;
+                    width: 100%;
+                }
             }
-        }
+
+                .c-section__title {
+                    font-weight: 700;
+                    line-height: 1;
+                    margin-bottom: 0;
+
+                    + hr {
+                        border-color: $color-white;
+                        margin: $unit / 4 auto;
+                        width: 30%;
+                    }
+                }
+
+                .c-section__subtitle {
+                    font-weight: 300;
+                }
+
 
     // .c-section__body {
 

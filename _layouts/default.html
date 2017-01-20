@@ -7,21 +7,17 @@
 
         {% include mobile-nav.html %}
 
-<!--         <div class="c-page-wrapper"> -->
+        {% include header.html %}
 
-            {% include header.html %}
+        <main role="main">
 
-            <main role="main">
+            {{ content }}
 
-                {{ content }}
+        </main>
 
-            </main>
+        {% include footer.html %}
 
-            {% include footer.html %}
-
-            {% include foot.html %}
-
-<!--         </div> -->
+        {% include foot.html %}
 
     </body>
 

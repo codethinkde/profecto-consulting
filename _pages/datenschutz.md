@@ -1,9 +1,9 @@
 ---
-layout: page
-title: Datenschutz<wbr/>erklärung
-permalink: /datenschutz/
-menu-position: footer
-header-img: section-header-2.jpg
+layout:         page
+title:          Datenschutz<wbr/>erklärung
+permalink:      /datenschutz/
+menu-position:  footer
+header-img:     section-header-2.jpg
 ---
 
 ## Datenschutz
