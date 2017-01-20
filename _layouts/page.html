@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<section class="c-section">
+
+    <header class="c-section__header">
+
+        <div class="c-section__image">
+            {% if page.header-img %}
+                <img class="u-ani--zoom u-ani--hover" src="/assets/img/{{page.header-img}}" alt="">
+            {% else %}
+                <img class="u-ani--zoom u-ani--hover" src="/assets/img/section-header-1.jpg" alt="">
+            {% endif %}
+            <div class="c-section__image-inner"></div>
+        </div>
+
+        <div class="c-section__title">
+
+            <h1>{{page.title | upcase}}</h1>
+            <hr>
+            <p>{{page.subtitle | upcase}}</p>
+
+        </div>
+
+    </header>
+
+    <div class="o-box c-section__body">
+
+        <div class="o-layout o-layout--flush">
+            <div class="o-layout__item u-1/2@tablet"></div>
+            <div class="o-layout__item u-1/2@tablet">
+
+                {{ content }}
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+

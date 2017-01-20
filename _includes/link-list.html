@@ -1,0 +1,7 @@
+{% for p in site.pages %}
+    {% if p.menu-position == class[0] %}
+        <li class="{{class[1]}}">
+            <a class="{{class[2]}} {% if p.title == page.title %}{{class[2]}}--active{% endif %}" name="{{p.permalink | slugify}}" href="{{p.url}}">{{p.title}}</a>
+        </li>
+    {% endif %}
+{% endfor %}

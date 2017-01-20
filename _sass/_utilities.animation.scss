@@ -1,0 +1,24 @@
+/* ==========================================================================
+   #ANIMATION
+   ========================================================================== */
+
+$transition: $global-transition !default;
+
+/**
+ * .u-ani
+ * .u-ani--hover .u-ani--active .u-ani--infinite
+ * .u-ani--inner-zoom
+ */
+
+/**
+ * It is recommended to apply 'overflow: hidden;' to the parrent
+ */
+.u-ani--zoom {
+    transform: scale(1);
+    transition: transform $transition;
+
+    &.u-ani--active,
+    &.u-ani--hover:hover {
+        transform: scale(1.05);
+    }
+}

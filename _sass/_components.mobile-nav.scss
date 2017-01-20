@@ -1,0 +1,89 @@
+/* ==========================================================================
+   #MOBILE-NAV
+   ========================================================================== */
+
+/**
+ * This class is applied to the html tag
+ *
+ * 1. disable scroll on main site when mobile-nav is open
+ * 2. Anomation with the `tranform: translate` property are
+ *    more performant
+ */
+.c-page--nav-active {
+    &,
+    body {
+        overflow: hidden; /* [1] */
+    }
+}
+
+.c-mobile-nav {
+    @include font(secondary);
+    background: rgba($color-white, .95);
+    height: 100%;
+    opacity: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: $unit $unit * 2 $unit * 2;
+    position: absolute;
+    top: 0;
+    transition: opacity $global-transition;
+    visibility: hidden;
+    width: 100%;
+    z-index: 1024;
+
+
+    .c-page--nav-active & {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+    .c-mobile-nav__list {
+        list-style: none;
+        margin-left: 0;
+    }
+
+        .c-mobile-nav__item {
+            border-bottom: 1px solid rgba($color-secondary, .5);
+            font-size: 1.4em;
+            opacity: 0;
+            text-align: center;
+            transform: translateY($unit); /* [2] */
+
+            &:last-child {
+                border-bottom: 0;
+            }
+
+            .c-page--nav-active & {
+                opacity: 1;
+                transform: translateY(0); /* [2] */
+            }
+        }
+
+            .c-mobile-nav__link {
+                color: $color-body;
+                display: block;
+                padding: $unit;
+                text-decoration: none;
+
+                &--active {
+                    color: $color-hover;
+                }
+            }
+
+/**
+ * Nav Item Animation
+ *
+ * 1. fade-in transition
+ */
+$delay-in: 0;
+
+@for $i from 1 through 5 {
+
+    .c-mobile-nav__item:nth-child(#{$i}) {
+        transition: $global-transition #{$delay-in}s; /* [1] */
+    }
+
+    $delay-in: $delay-in + .05;
+}
+

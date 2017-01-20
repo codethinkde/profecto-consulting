@@ -1,0 +1,16 @@
+<nav class="c-page-nav">
+
+    <div class="o-wrapper u-content-right">
+
+        <ul class="c-page-nav__list u-hidden@until-tablet">
+            {% assign class = "header|c-page-nav__item|c-page-nav__link" | split: "|" %}
+            {% include link-list.html %}
+        </ul>
+
+    </div>
+
+    <div class="u-hidden@from-tablet u-content-center">
+        <button class="c-page-nav__hamburger" name="mobieNavOperator" data="open"></button>
+    </div>
+
+</nav>

@@ -1,0 +1,23 @@
+/* ==========================================================================
+   #PAGE-FOOTER
+   ========================================================================== */
+
+.c-page-footer {
+    @include font(secondary);
+    border-top: 3px solid $color-background;
+    font-size: 80%;
+    text-align: center;
+}
+
+    .c-page-footer__list {
+        li + li::before {
+            color: $color-light;
+            content: '/';
+        }
+    }
+
+        .c-page-footer__link {
+            &--active {
+                color: $color-hover;
+            }
+        }

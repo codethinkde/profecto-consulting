@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de" class="c-page c-page--{{page.permalink | slugify}} {{layout.page-class}} {{page.page-class}} no-js">
+
+    {% include head.html %}
+
+    <body>
+
+        {% include mobile-nav.html %}
+
+<!--         <div class="c-page-wrapper"> -->
+
+            {% include header.html %}
+
+            <main role="main">
+
+                {{ content }}
+
+            </main>
+
+            {% include footer.html %}
+
+            {% include foot.html %}
+
+<!--         </div> -->
+
+    </body>
+
+</html>

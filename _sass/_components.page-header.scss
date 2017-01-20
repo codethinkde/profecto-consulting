@@ -1,0 +1,31 @@
+/* ==========================================================================
+   #PAGE-HEADER
+   ========================================================================== */
+
+.c-page-header {
+    position: relative;
+}
+
+    .c-page-header__sticky {
+        position: fixed;
+        z-index: 101;
+        background-color: rgba($color-white, .95);
+        width: 100%;
+        padding: $unit / 2 0;
+    }
+
+    .c-page-header__logo {
+        padding: $unit / 2 0;
+    }
+
+    .c-page-header__nav {
+        position: absolute;
+        z-index: 102;
+        top: $unit * 3.6;
+        right: $unit;
+
+        &--scrolled {
+            position: fixed;
+            top: $unit;
+        }
+    }

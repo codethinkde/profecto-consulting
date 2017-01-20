@@ -1,0 +1,70 @@
+/* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
+
+/**
+ * Simple default styles for headings 1 through 6. Anything more opinionated
+ * than simple font-size changes should likely be applied via classes (see:
+ * http://csswizardry.com/2016/02/managing-typography-on-large-apps/).
+ */
+
+
+// We have all of our heading font sizes defined here. Passing these pixel
+// values into our `inuit-font-size()` mixin will generate a rem-based
+// `font-size` with a pixel fallback, as well as generating a `line-height` that
+// will sit on our baseline grid.
+
+$inuit-font-size-h1:  36px !default; /* 2 */
+$inuit-font-size-h2:  28px !default; /* 1.75 */
+$inuit-font-size-h3:  24px !default; /* 1.5 */
+$inuit-font-size-h4:  18px !default; /* 1.125 */
+$inuit-font-size-h5:  18px !default;
+$inuit-font-size-h6:  18px !default;
+
+
+// h1 {
+//   @include inuit-font-size($inuit-font-size-h1);
+// }
+
+h1 {
+
+    @include inuit-font-size(28px); /* mobile */
+
+    @include mq($from: tablet) {
+        @include inuit-font-size(32px); /* tablet */
+    }
+
+    @include mq($from: desktop) {
+        @include inuit-font-size(36px); /* desktop */
+    }
+}
+
+h2 {
+    @include inuit-font-size(24px); /* mobile */
+
+    @include mq($from: tablet) {
+        @include inuit-font-size(26px); /* tablet */
+    }
+
+    @include mq($from: desktop) {
+        @include inuit-font-size(28px); /* desktop */
+    }
+}
+
+h3 {
+    @include inuit-font-size(20px); /* mobile */
+
+    @include mq($from: tablet) {
+        @include inuit-font-size(22px); /* tablet */
+    }
+
+    @include mq($from: desktop) {
+        @include inuit-font-size(24px); /* desktop */
+    }
+}
+
+h4,
+h5,
+h6 {
+    @include inuit-font-size(18px); /* all */
+}
