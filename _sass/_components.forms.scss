@@ -1,0 +1,56 @@
+/* ==========================================================================
+   #FORMS
+   ========================================================================== */
+
+    .c-form__required {
+        vertical-align: super;
+        font-size: 80%;
+        color: #CC394B;
+    }
+
+
+// .c-form__radio-group {
+
+// }
+
+//     .c-form__radio-btn {
+//         border: 1px solid $color-copy;
+//         border-right-width: 0;
+//         cursor: pointer;
+//         font-weight: normal;
+//         display: inline-block;
+//         padding: $unit / 4 $unit / 2;
+
+//         >input {
+//             margin-right: $unit / 4;
+//         }
+
+//         &:first-child {
+//             border-radius: $global-radius 0 0 $global-radius;
+//         }
+
+//         &:last-child {
+//             border-radius: 0 $global-radius $global-radius 0;
+//             border-right-width: 1px;
+//         }
+
+//     }
+
+
+// .c-form__radio-group--vertical {
+//     .c-form__radio-btn {
+//         border-width: 1px;
+//         border-bottom-width: 0;
+//         display: block;
+
+//         &:first-child {
+//             border-radius: $global-radius $global-radius 0 0;
+//         }
+
+//         &:last-child {
+//             border-bottom-width: 1px;
+//             border-radius: 0 0 $global-radius $global-radius;
+//         }
+
+//     }
+// }

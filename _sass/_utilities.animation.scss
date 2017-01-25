@@ -3,22 +3,66 @@
    ========================================================================== */
 
 $transition: $global-transition !default;
+$animation:  600ms !default;
 
 /**
  * .u-ani
- * .u-ani--hover .u-ani--active .u-ani--infinite
- * .u-ani--inner-zoom
+ * .u-ani--hover .u-ani--start .u-ani--infinite
+ * .u-ani--zoom
  */
+
+.u-ani {
+    transition: $animation;
+
+    &--delay1 { transition: $animation 200ms; }
+    &--delay2 { transition: $animation 400ms; }
+    &--delay3 { transition: $animation 600ms; }
+}
 
 /**
  * It is recommended to apply 'overflow: hidden;' to the parrent
  */
 .u-ani--zoom {
     transform: scale(1);
-    transition: transform $transition;
 
-    &.u-ani--active,
+    &.u-ani--start,
     &.u-ani--hover:hover {
         transform: scale(1.05);
+    }
+}
+
+.u-ani--fade-in {
+    opacity: 0;
+
+    &.u-ani--start,
+    &.u-ani--hover:hover {
+        opacity: 1;
+    }
+}
+
+.u-ani--move-left {
+    transform: translateX(30px);
+
+    &.u-ani--start,
+    &.u-ani--hover:hover {
+        transform: translateX(0);
+    }
+}
+
+.u-ani--move-right {
+    transform: translateX(-30px);
+
+    &.u-ani--start,
+    &.u-ani--hover:hover {
+        transform: translateX(0);
+    }
+}
+
+.u-ani--move-up {
+    transform: translateY(30px);
+
+    &.u-ani--start,
+    &.u-ani--hover:hover {
+        transform: translateY(0);
     }
 }

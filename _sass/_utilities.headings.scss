@@ -1,0 +1,22 @@
+/* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
+
+.u-h1,
+.u-h2,
+.u-h3,
+.u-h4,
+.u-h5,
+.u-h6 {
+    @include font(secondary);
+}
+
+.u-h1--primary,
+.u-h2--primary,
+.u-h3--primary,
+.u-h4--primary,
+.u-h5--primary,
+.u-h6--primary {
+    color: $color-primary;
+    font-weight: 600;
+}

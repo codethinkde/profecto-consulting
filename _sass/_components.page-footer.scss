@@ -6,6 +6,7 @@
     @include font(secondary);
     border-top: 3px solid $color-background;
     font-size: 80%;
+    margin-top: $unit * 2;
     text-align: center;
 }
 

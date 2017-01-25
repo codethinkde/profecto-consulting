@@ -2,15 +2,21 @@
    #SECTION
    ========================================================================== */
 
-// .c-section {
-
-// }
+.c-section {
+    // margin-bottom: $unit;
+}
 
     .c-section__header {
         @include font(secondary);
+
+        &--plain {
+            border-top: 3px solid $color-background;
+            padding: $unit * 2 0;
+        }
     }
 
         .c-section__image {
+            overflow: hidden;
             position: relative;
         }
 
@@ -43,21 +49,26 @@
                 }
             }
 
-                .c-section__title {
-                    font-weight: 700;
-                    line-height: 1;
-                    margin-bottom: 0;
+        .c-section__title-container {
+            font-weight: 300;
+            text-align: center;
+            text-transform: uppercase;
+        }
 
-                    + hr {
-                        border-color: $color-white;
-                        margin: $unit / 4 auto;
-                        width: 30%;
-                    }
-                }
+            .c-section__title {
+                line-height: 1;
+                margin-bottom: 0;
 
-                .c-section__subtitle {
-                    font-weight: 300;
+                + hr {
+                    border-color: $color-secondary;
+                    margin: $unit / 4 auto;
+                    width: 30%;
                 }
+            }
+
+            .c-section__subtitle {
+                margin-bottom: 0;
+            }
 
 
     // .c-section__body {

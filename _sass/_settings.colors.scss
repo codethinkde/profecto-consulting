@@ -35,8 +35,9 @@ $color-white:                 #fff;
  * Font Families
  */
 
-$font-primary:      "Palatino Linotype", "Book Antiqua", Palatino, serif;
+// $font-primary:      "Palatino Linotype", "Book Antiqua", Palatino, serif;
 $font-secondary:    'Open Sans', sans-serif;
+$font-primary:      $font-secondary;
 
 
 /**
