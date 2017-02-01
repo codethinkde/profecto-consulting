@@ -16,8 +16,24 @@
         margin-top: $unit / 2;
     }
 
+    &--large > *+* {
+        margin-top: $unit * 2;
+    }
+
     &--off > *+* {
         margin-top: 0;
+    }
+
+    &--bottom {
+        > * {
+            margin-bottom: $unit;
+            margin-top: 0;
+
+        }
+
+        > :last-child {
+            margin-bottom: 0;
+        }
     }
 
 }

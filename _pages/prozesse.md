@@ -3,7 +3,7 @@ layout:         page
 title:          Prozesse
 subtitle:       Die Seele des Unternehmens
 permalink:      /prozesse/
-menu-position:  header
+menu-position:
 header-img:     section-header-4.jpg
 ---
 

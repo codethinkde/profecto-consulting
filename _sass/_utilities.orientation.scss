@@ -26,6 +26,9 @@ $orientations: (
     }
 }
 
+/**
+ * Container need a height
+ */
 .u-content-vcenter {
     position: relative;
 
@@ -40,4 +43,8 @@ $orientations: (
 .u-box-center {
     margin-left: auto;
     margin-right: auto;
+}
+
+.u-float-right {
+    float: right;
 }

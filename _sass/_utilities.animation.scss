@@ -3,7 +3,7 @@
    ========================================================================== */
 
 $transition: $global-transition !default;
-$animation:  600ms !default;
+$animation:  800ms !default;
 
 /**
  * .u-ani
@@ -14,9 +14,13 @@ $animation:  600ms !default;
 .u-ani {
     transition: $animation;
 
-    &--delay1 { transition: $animation 200ms; }
-    &--delay2 { transition: $animation 400ms; }
-    &--delay3 { transition: $animation 600ms; }
+    &--delay1 { transition: $animation 150ms; }
+    &--delay2 { transition: $animation 300ms; }
+    &--delay3 { transition: $animation 450ms; }
+}
+
+.u-ani--hover {
+    transition: $transition;
 }
 
 /**

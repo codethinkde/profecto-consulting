@@ -7,11 +7,11 @@
 }
 
     .c-page-header__sticky {
-        position: fixed;
-        z-index: 101;
         background-color: rgba($color-white, .95);
-        width: 100%;
         padding: $unit / 2 0;
+        position: fixed;
+        width: 100%;
+        z-index: 101;
     }
 
     .c-page-header__logo {
@@ -20,9 +20,10 @@
 
     .c-page-header__nav {
         position: absolute;
-        z-index: 102;
         top: $unit * 3.6;
-        right: $unit;
+        // right: $unit;
+        width: 100%;
+        z-index: 102;
 
         &--scrolled {
             position: fixed;

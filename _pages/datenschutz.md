@@ -1,8 +1,9 @@
 ---
-layout:         page
+layout:         page--full
 title:          Datenschutz<wbr/>erklärung
 permalink:      /datenschutz/
 menu-position:  footer
+backlink:       /
 header-img:     section-header-2.jpg
 ---
 

@@ -50,7 +50,7 @@ $(window).scroll(function() {
 var hasAni = $("[data-has-ani]");
 var started = [];
 hasAni.each( function( i ) { started[i] = false; });
-var viewport = $(window).height() * 0.75;
+var viewport = $(window).height() * 0.85;
 
 $(window).scroll(function() {
     var position = $(this).scrollTop();
@@ -68,8 +68,7 @@ $(window).scroll(function() {
 /**
  * Google Maps JavaScript API
  */
-
- function initMap() {
+function initMap() {
     var germany = {lat: 51.078, lng: 9.835};
     var map = new google.maps.Map(document.getElementById('googleMap'), {
         center: germany,

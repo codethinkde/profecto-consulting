@@ -2,12 +2,16 @@
    #SITE-NAV
    ========================================================================== */
 
-$nav-height: $unit * 1.5;
+$nav-height: 48px;
 
 .c-page-nav {
     @include font(secondary);
     height: $nav-height;
 }
+
+    .c-page-nav__backlink {
+        height: 0;
+    }
 
     .c-page-nav__list {
         list-style: none;
@@ -54,7 +58,7 @@ $nav-height: $unit * 1.5;
                 content: '';
                 display: block;
                 height: $hamburger-lines;
-                margin-top: -50%;
+                margin-top: -($unit / 2);
                 transition: $global-transition;
             }
 

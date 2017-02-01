@@ -8,16 +8,22 @@
 
     .c-section__header {
         @include font(secondary);
+        padding-bottom: $unit * 2;
 
         &--plain {
             border-top: 3px solid $color-background;
-            padding: $unit * 2 0;
+            padding-top: $unit * 2;
         }
     }
 
         .c-section__image {
             overflow: hidden;
             position: relative;
+
+            > img {
+                position: relative;
+                z-index: 10;
+            }
         }
 
             .c-section__image-container img,
@@ -49,10 +55,35 @@
                 }
             }
 
+            .c-section__image-inner {
+                margin-top: -5%;
+                padding-top: 5%;
+                position: relative;
+                z-index: 11;
+
+                .c-section__header--primary & {
+                    background-color: rgba($color-primary, .6);
+                }
+
+                .c-section__header--secondary & {
+                    background-color: rgba($color-secondary, .6);
+                }
+            }
+
         .c-section__title-container {
             font-weight: 300;
             text-align: center;
             text-transform: uppercase;
+
+            .c-section__header--primary & {
+                background-color: $color-primary;
+                color: $color-white;
+                padding: $unit 0;
+
+                > hr {
+                    border-color: $color-white !important;
+                }
+            }
         }
 
             .c-section__title {
@@ -71,6 +102,17 @@
             }
 
 
-    // .c-section__body {
+    .c-section__body {
 
-    // }
+        ul:not(.o-list-bare) {
+            list-style-image: url('../img/icon-check.svg');
+        }
+
+    }
+
+    .c-section__divider {
+        border-color: $color-background;
+        border-width: 3px;
+        margin-left: -500%;
+        width: 1100%;
+    }

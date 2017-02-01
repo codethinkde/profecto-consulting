@@ -114,8 +114,8 @@ $inuit-crops: (
 );
 @import '../node_modules/inuitcss/objects/objects.wrapper';
 @import '../node_modules/inuitcss/objects/objects.layout';
-// @import '../node_modules/inuitcss/objects/objects.media';
-// @import '../node_modules/inuitcss/objects/objects.flag';
+@import '../node_modules/inuitcss/objects/objects.media';
+@import '../node_modules/inuitcss/objects/objects.flag';
 @import '../node_modules/inuitcss/objects/objects.list-bare';
 @import '../node_modules/inuitcss/objects/objects.list-inline';
 @import '../node_modules/inuitcss/objects/objects.box';
@@ -141,6 +141,21 @@ $page-wrapper-width: 1200px;
 @import 'components.forms';
 @import '../assets/font/codethink-font-embedded';
 
+.c-map {
+    height: $unit * 25;
+}
+
+.c-map-aside {
+    @include mq($from: tablet) {
+        height: $unit * 25;
+
+        > * {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
 
 
 
@@ -166,7 +181,15 @@ $page-wrapper-width: 1200px;
     color: $color-primary-darker;
 }
 
+.u-bg-gray-1 {
+    background-color: $oc-gray-1;
+}
+
 .u-overflow-hidden {
     overflow: hidden;
+}
+
+.u-font-small {
+    font-size: 80%;
 }
 
