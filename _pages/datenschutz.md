@@ -1,6 +1,6 @@
 ---
 layout:         page--full
-title:          Datenschutz<wbr/>erklärung
+title:          Datenschutz&shy;erklärung
 permalink:      /datenschutz/
 menu-position:  footer
 backlink:       /

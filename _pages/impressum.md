@@ -25,7 +25,7 @@ header-img:     section-header-3.jpg
 <ul class="o-list-bare">
     <li><strong>Telefon</strong> +49 (0)30 21300038-0</li>
     <li><strong>Telefax</strong> +49 (0)30 21300038-16</li>
-    <li><strong>E-Mail</strong> info@profecto-consulting.com</li>
+    <li><strong>E-Mail</strong> <noscript defuscate data-name="office" data-domain="profecto-consulting.com"><em>Diese E-Mail-Adresse ist durch JavaScript geschützt</em></noscript></li>
 </ul>
 
 ### Eintragung im Handelsregister
@@ -38,14 +38,6 @@ header-img:     section-header-3.jpg
 ### Umsatzsteuer-ID
 
 Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: DE261339321
-
-### Bank
-
-<ul class="o-list-bare">
-    <li><strong>Deutsche Bank</strong> IBAN DE71 3707 0024 0116 3609 00 | BIC DEUTDEDBKOE</li>
-    <li><strong>Kreissparkasse Waiblingen</strong> IBAN DE19 6025 0010 0015 1148 40 | BIC SOLADES1WBN</li>
-</ul>
-
 
 ## Haftungsausschluss (Disclaimer)
 

@@ -66,6 +66,21 @@ $(window).scroll(function() {
 
 
 /**
+ * Email Obfuscator
+ * @author: Lukas Hermann <lukas@codethink.de>
+ *
+ * Use with the following html-tag:
+ * <noscript defuscate data-name="lukas" data-domain="codethink.de"><em>Diese E-Mail-Adresse ist durch JavaScript geschützt</em></noscript>
+ */
+var spam = $("[defuscate]"), lhs = spam.attr("data-name"), rhs = spam.attr("data-domain");
+var nospam = "<a href=\"mailto" + ":" + lhs + "spamkill@" + rhs + "\" onclick=\"rep(this)\">" + lhs + "<span class=\"u-hidden\">spamkill</span>" + window.atob('QA==') + rhs + "</a>";
+spam.replaceWith( nospam );
+function rep(e) {
+    e.href=e.href.replace(/spamkill/,'')
+}
+
+
+/**
  * Google Maps JavaScript API
  */
 function initMap() {
@@ -99,23 +114,23 @@ function setMarkers(map) {
 
     var locations = [
         {
-            title:  "Geschäftsstelle Berlin-Schönefeld",
+            title:  "Standort Berlin-Schönefeld",
             lat:    52.367566,
             long:   13.561229,
             zIndex: 3,
-            window: "<strong>Geschäftsstelle Berlin-Schönefeld</strong><br>Zeppelinstraße 3<br>12529 Berlin-Schönefeld<br>Telefon: +49 (0)30 21300038-0"
+            window: "<strong>Standort Berlin-Schönefeld</strong><br>Zeppelinstraße 3<br>12529 Berlin-Schönefeld<br>Telefon: +49 (0)30 21300038-0"
         }, {
-            title:  "Geschäftsstelle Mundelsheim",
+            title:  "Standort Mundelsheim",
             lat:    48.992390,
             long:   9.210730,
             zIndex: 2,
-            window: "<strong>Geschäftsstelle Mundelsheim</strong><br>Seelhofenstraße 76<br>74395 Mundelsheim<br>Telefon: +49 (0)30 21300038-0"
+            window: "<strong>Standort Mundelsheim</strong><br>Seelhofenstraße 76<br>74395 Mundelsheim<br>Telefon: +49 (0)30 21300038-0"
         }, {
-            title:  "Geschäftsstelle Düren",
+            title:  "Standort Düren",
             lat:    50.813640,
             long:   6.473220,
             zIndex: 1,
-            window: "<strong>Geschäftsstelle Düren</strong><br>Neue Jülicher Straße 60<br>52353 Düren<br>Telefon: +49 (0)30 21300038-0"
+            window: "<strong>Standort Düren</strong><br>Neue Jülicher Straße 60<br>52353 Düren<br>Telefon: +49 (0)30 21300038-0"
         }
     ]
 
