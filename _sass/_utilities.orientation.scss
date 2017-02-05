@@ -16,7 +16,7 @@ $orientations: (
 
 @each $orientation, $orientations-namespace in $orientations {
     .u-content#{$orientations-namespace} {
-        text-align: $orientation;
+        text-align: $orientation !important;
     }
 }
 
@@ -44,6 +44,9 @@ $orientations: (
     margin-left: auto;
     margin-right: auto;
 }
+
+.u-box-left { margin-right: auto; }
+.u-box-right { margin-left: auto; }
 
 .u-float-right {
     float: right;

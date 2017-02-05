@@ -23,7 +23,7 @@ Die durch den Cookie erzeugten Informationen über die Benutzung dieser Website 
 
 Wenn Sie mit der Speicherung und Nutzung Ihrer Daten nicht einverstanden sind, können Sie die Speicherung und Nutzung hier deaktivieren. In diesem Fall wird in Ihrem Browser ein Opt-Out-Cookie hinterlegt der verhindert, dass Piwik Nutzungsdaten speichert. Wenn Sie Ihre Cookies löschen hat dies zur Folge, dass auch das Piwik Opt-Out-Cookie gelöscht wird. Das Opt-Out muss bei einem erneuten Beuch unserer Seite wieder aktiviert werden.
 
-<iframe style="border: 0; height: 200px; width: 100%;" src="https://analytics.joelmediatv.de/index.php?module=CoreAdminHome&action=optOut&language=de"></iframe>
+<iframe style="border: 0; height: 200px; width: 100%;" src="https://analytics.codethink.de/index.php?module=CoreAdminHome&action=optOut&language=de"></iframe>
 
 ## Server-Log-Files
 

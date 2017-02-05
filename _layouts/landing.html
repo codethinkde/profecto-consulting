@@ -6,30 +6,29 @@ layout: default
 <section id="process" class="c-section">
 
 
-    <header class="c-section__header">
+    <header class="c-section__header c-section__header--primary">
 
         <div class="c-section__image">
             <div class="o-crop o-crop--3:1 c-section__image-container">
-                <img width="100%" src="/assets/img/header-1.jpg" alt="">
+                <img width="100%" src="/assets/img/section-header-landing.jpg" alt="">
             </div>
-            <div class="o-box c-section__image-overlay u-1/2">
-                <div class="c-section__title-container">
-                    <h1 class="c-section__title">{{page.title | upcase}}</h1>
-                    <hr>
-                    <p class="c-section__subtitle">{{page.subtitle}}</p>
-                </div>
-            </div>
+            <div class="c-section__image-inner"></div>
+        </div>
+
+        <div class="c-section__title-container">
+
+            <h1 class="c-section__title">{{page.title}}</h1>
+            <hr class="c-section__hr">
+            <p class="c-section__subtitle">{{page.subtitle}}</p>
+
         </div>
 
     </header>
 
 
-    <div id="process-body" class="o-wrapper c-section__body u-owl u-owl--large u-padding-bottom">
+    <div id="process-body" class="o-wrapper c-section__body u-owl u-owl--large">
 
-        <div class="o-layout o-layout--large">
-            <div class="o-layout__item u-1/2@tablet">
-                <!-- <img src="/assets/img/processes-illustration.jpg" alt=""> -->
-            </div>
+        <div class="o-layout o-layout--large o-layout--reverse">
             <div class="o-layout__item u-1/2@tablet">
 
                 <h2>Process</h2>
@@ -44,8 +43,10 @@ layout: default
                     <li>mehr Zeit für Ihre Kernprozesse</li>
                 </ul>
 
+            </div>
+            <div class="o-layout__item u-1/2@tablet u-padding-top-huge">
 
-                <div class="o-block o-block--flush u-4/5">
+                <div class="o-block o-block--flush u-4/5 u-box-right">
                     <div class="o-block__img u-overflow-hidden">
                         <a href="/prozesse-energiewirtschaft/">
                             <img class="u-ani u-ani--zoom u-ani--hover" src="/assets/img/process-energy.jpg" alt="">
@@ -127,48 +128,52 @@ layout: default
 <!-- Section Kunden -->
 <section id="kunden" data-has-ani class="c-section">
 
-    <header class="c-section__header c-section__header--plain">
+    <header class="c-section__header c-section__header--secondary">
 
         <div class="c-section__title-container">
 
             <h1 data-ani-start class="c-section__title u-ani u-ani--fade-in u-ani--move-right">Unsere Kunden</h1>
+            <hr class="c-section__hr">
+            <p data-ani-start class="c-section__subtitle u-ani u-ani--fade-in u-ani--move-left">die in unsere Dienste vertrauen</p>
 
         </div>
 
     </header>
 
-    <div data-ani-start class="o-wrapper u-ani u-ani--fade-in u-ani--move-left">
+    <div data-ani-start class="o-wrapper u-ani u-ani--fade-in u-ani--move-left u-2/3@tablet">
 
         <div class="o-layout o-layout--large o-layout--center">
-            <div class="o-layout__item u-1/3@mobile u-1/4@tablet u-1/5@desktop">
-                <img class="u-1/1" src="/assets/img/kunden-logo-1.svg" alt="">
+            <div class="o-layout__item u-1/3 u-content-center">
+                <img width="120px" src="/assets/img/kunden-logo-1.svg" alt="">
             </div>
-            <div class="o-layout__item u-1/3@mobile u-1/4@tablet u-1/5@desktop">
-                <img class="u-1/1" src="/assets/img/kunden-logo-2.svg" alt="">
+            <div class="o-layout__item u-1/3 u-content-center">
+                <img width="120px" src="/assets/img/kunden-logo-2.svg" alt="">
             </div>
-            <div class="o-layout__item u-1/3@mobile u-1/4@tablet u-1/5@desktop">
-                <img class="u-1/1" src="/assets/img/kunden-logo-3.svg" alt="">
+            <div class="o-layout__item u-1/3 u-content-center">
+                <img width="120px" src="/assets/img/kunden-logo-3.svg" alt="">
             </div>
         </div>
 
     </div>
 
-    <div data-ani-start class="o-wrapper u-margin-top-large u-content-center u-ani u-ani--fade-in u-ani--move-up">
+    <div data-ani-start class="o-wrapper u-margin-top-large u-ani u-ani--fade-in u-ani--move-up">
 
-        <div class="o-box o-box--large">
-            <h2>Was unsere Kunden sagen</h2>
-            <p>„Gerade die Fähigkeit, die Leistungsfähigkeit der Lösung beliebig zu verändern, je nachdem, wie hoch oder wie niedrig das Sendungsaufkommen ist, hat uns überzeugt."</p>
-            <div class="o-flag u-1/2 u-1/4@tablet u-content-left u-box-center">
-                <div class="o-flag__img">
-                    <img width="60" src="/assets/img/avatar-1.svg" alt="">
-                </div>
-                <div class="o-flag__body">
-                    <strong>Max Mustermann</strong>
-                    <br>XYZ-Company
+        <div class="o-layout">
+            <div class="o-layout__item u-1/2">
+                <div class="o-flag o-flag--reverse">
+                    <div class="o-flag__img">
+                        <img width="60" src="/assets/img/avatar-1.svg" alt="">
+                    </div>
+                    <div class="o-flag__body u-content-right">
+                        <strong>Max Mustermann</strong>
+                        <br>XYZ-Company
+                    </div>
                 </div>
             </div>
+            <div class="o-layout__item u-1/2">
+                <p>„Gerade die Fähigkeit, die Leistungsfähigkeit der Lösung beliebig zu verändern, je nachdem, wie hoch oder wie niedrig das Sendungsaufkommen ist, hat uns überzeugt."</p>
+            </div>
         </div>
-
 
     </div>
 
@@ -178,19 +183,19 @@ layout: default
 <!-- Section Team -->
 <section id="team" data-has-ani class="c-section">
 
-    <header class="c-section__header c-section__header--plain u-padding-bottom-none">
+    <header class="c-section__header c-section__header--secondary">
 
         <div class="c-section__title-container">
 
             <h1 data-ani-start class="c-section__title u-ani u-ani--fade-in u-ani--move-right">Ihre Ansprechpartner</h1>
-            <hr>
+            <hr class="c-section__hr">
             <p data-ani-start class="c-section__subtitle u-ani u-ani--fade-in u-ani--move-left">Für Prozesse und Energiewirtschaft</p>
 
         </div>
 
     </header>
 
-    <div class="o-wrapper u-padding-large">
+    <div class="o-wrapper">
 
         <ul class="o-layout o-layout--large u-content-center">
 
@@ -225,14 +230,14 @@ layout: default
 
 
 <!-- Section Standorte -->
-<section id="standorte" data-has-ani class="c-section">
+<section id="standorte" data-has-ani class="c-section u-margin-bottom-none">
 
-    <header class="c-section__header c-section__header--plain">
+    <header class="c-section__header c-section__header--secondary u-margin-bottom-none">
 
         <div class="c-section__title-container">
 
             <h1 data-ani-start class="c-section__title u-ani u-ani--fade-in u-ani--move-right">Standorte</h1>
-            <hr>
+            <hr class="c-section__hr">
             <p data-ani-start class="c-section__subtitle u-ani u-ani--fade-in u-ani--move-left">In Ihrer Nähe</p>
 
         </div>
@@ -247,7 +252,7 @@ layout: default
         </div>
         <div data-ani-start class="o-layout__item c-map-aside u-1/2@tablet u-ani u-ani--fade-in u-ani--move-left">
 
-            <ul class="o-list-bare u-content-center u-1/1 u-margin-top">
+            <ul class="o-list-bare u-1/1 u-margin-top">
                 <li class="o-box u-owl u-owl--off">
                     <h3 class="u-h5 u-h5--primary">Standort Berlin-Schönefeld</h3>
                     <p>Zeppelinstraße 3</p>
@@ -274,13 +279,12 @@ layout: default
 <!-- Section Kontakte -->
 <section id="kontakt" data-has-ani class="c-section">
 
-
-    <header class="c-section__header c-section__header--plain">
+    <header class="c-section__header c-section__header--secondary">
 
         <div class="c-section__title-container">
 
             <h1 data-ani-start class="c-section__title u-ani u-ani--fade-in u-ani--move-right">Kontakt</h1>
-            <hr>
+            <hr class="c-section__hr">
             <p data-ani-start class="c-section__subtitle u-ani u-ani--fade-in u-ani--move-left">Wir sind für Sie da</p>
 
         </div>

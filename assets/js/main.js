@@ -73,9 +73,12 @@ $(window).scroll(function() {
  * <noscript defuscate data-name="lukas" data-domain="codethink.de"><em>Diese E-Mail-Adresse ist durch JavaScript geschützt</em></noscript>
  */
 var spam = $("[defuscate]"), lhs = spam.attr("data-name"), rhs = spam.attr("data-domain");
-var nospam = "<a href=\"mailto" + ":" + lhs + "spamkill@" + rhs + "\" onclick=\"rep(this)\">" + lhs + "<span class=\"u-hidden\">spamkill</span>" + window.atob('QA==') + rhs + "</a>";
-spam.replaceWith( nospam );
-function rep(e) {
+spam.each(function(e){
+    var lhs = $(this).attr("data-name"), rhs = $(this).attr("data-domain");
+    var nospam = "<a href=\"mailto" + ":" + lhs + "spamkill@" + rhs + "\" onclick=\"spamrep(this)\">" + lhs + "<span class=\"u-hidden\">spamkill</span>" + window.atob('QA==') + rhs + "</a>";
+    $(this).replaceWith( nospam );
+});
+function spamrep(e) {
     e.href=e.href.replace(/spamkill/,'')
 }
 
