@@ -5,6 +5,17 @@
     sup {
         color: $color-alert;
     }
+
+    // jQuery Form Validation
+    label.error {
+        color: $color-alert;
+        font-weight: normal;
+    }
+
+    // jQuery Form Validation
+    input.error:not(:focus) {
+        background-color: rgba($color-alert, .2);
+    }
 }
 
 

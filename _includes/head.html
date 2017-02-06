@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <title>{% if page.title %}{{ page.title | escape_once }}{% else %}{{ site.title | escape_once }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,7 +17,7 @@
     <link rel="icon" type="image/png" href="/assets/favicon/favicon-32x32.png?v=oLa8Qw4m90" sizes="32x32">
     <link rel="icon" type="image/png" href="/assets/favicon/favicon-16x16.png?v=oLa8Qw4m90" sizes="16x16">
     <link rel="manifest" href="/assets/favicon/manifest.json?v=oLa8Qw4m90">
-    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg?v=oLa8Qw4m90" color="#576767">
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg?v=oLa8Qw4m90">
     <link rel="shortcut icon" href="/favicon.ico?v=oLa8Qw4m90">
     <meta name="theme-color" content="#ffffff">
 </head>

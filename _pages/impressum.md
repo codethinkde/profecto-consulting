@@ -5,7 +5,8 @@ subtitle:       Alle rechtlichen Informationen
 permalink:      /impressum/
 menu-position:  footer
 backlink:       /
-header-img:     section-header-3.jpg
+header-img:     section-header-berlin.jpg
+header-offset:  -35%
 ---
 
 ### Angaben gemäß § 5 TMG

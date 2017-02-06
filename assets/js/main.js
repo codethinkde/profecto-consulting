@@ -1,3 +1,20 @@
+---
+# Main JS File
+---
+
+{% include_relative vendor/jquery.validate.min.js %}
+{% include_relative vendor/jquery.validate.messages_de.js %}
+
+
+/**
+ * jQuery Form Validator
+ */
+$("#contactform").validate({
+    errorPlacement: function(error, element) {
+        error.appendTo( element.closest("li") );
+    },
+});
+
 /**
  * open and close mobile nav
  */
@@ -72,15 +89,15 @@ $(window).scroll(function() {
  * Use with the following html-tag:
  * <noscript defuscate data-name="lukas" data-domain="codethink.de"><em>Diese E-Mail-Adresse ist durch JavaScript geschützt</em></noscript>
  */
-var spam = $("[defuscate]"), lhs = spam.attr("data-name"), rhs = spam.attr("data-domain");
+function spamrep() { this.href=this.href.replace(/spamkill/,'') }
+var spam = $("[data-defuscate]"), lhs = spam.attr("data-name"), rhs = spam.attr("data-domain");
 spam.each(function(e){
     var lhs = $(this).attr("data-name"), rhs = $(this).attr("data-domain");
-    var nospam = "<a href=\"mailto" + ":" + lhs + "spamkill@" + rhs + "\" onclick=\"spamrep(this)\">" + lhs + "<span class=\"u-hidden\">spamkill</span>" + window.atob('QA==') + rhs + "</a>";
+    var nospam = "<a data-email href=\"mailto" + ":" + lhs + "spamkill@" + rhs + "\" >" + lhs + "<span class=\"u-hidden\">spamkill</span>" + window.atob('QA==') + rhs + "</a>";
     $(this).replaceWith( nospam );
 });
-function spamrep(e) {
-    e.href=e.href.replace(/spamkill/,'')
-}
+$("body").on( 'click', "[data-email]", spamrep );
+$("body").on( 'contextmenu', "[data-email]", spamrep );
 
 
 /**
