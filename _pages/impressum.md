@@ -26,7 +26,7 @@ header-offset:  -35%
 <ul class="o-list-bare">
     <li><strong>Telefon</strong> +49 (0)30 21300038-0</li>
     <li><strong>Telefax</strong> +49 (0)30 21300038-16</li>
-    <li><strong>E-Mail</strong> <noscript defuscate data-name="office" data-domain="profecto-consulting.com"><em>Diese E-Mail-Adresse ist durch JavaScript geschützt</em></noscript></li>
+    <li><strong>E-Mail</strong> <noscript data-defuscate data-name="office" data-domain="profecto-consulting.com"><em>Diese E-Mail-Adresse ist durch JavaScript geschützt</em></noscript></li>
 </ul>
 
 ### Eintragung im Handelsregister
