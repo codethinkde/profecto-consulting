@@ -6,6 +6,7 @@ permalink:      /prozesse-energiewirtschaft/
 menu-position:
 backlink:       /
 header-img:     section-header-energy.jpg
+header-offset:  -60%
 ---
 
 <div class="o-layout o-layout--large">

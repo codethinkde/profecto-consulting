@@ -36,3 +36,7 @@ exclude:
   - Gemfile.lock
   - node_modules
   - serve.sh
+
+sass:
+  sass_dir: _sass
+  style: compressed

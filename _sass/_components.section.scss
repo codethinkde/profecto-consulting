@@ -37,7 +37,8 @@
                 img {
                     position: absolute;
                     left: 0;
-                    top: -20%;
+                    top: -32%;
+                    width: 100%;
                     // transform: translateZ(-1px) scale(2);
                     // transform: translateY(-40%);
                     // transform: translate3d(12px, 50%, 3em);
@@ -62,8 +63,8 @@
             // }
 
             .c-section__image-inner {
-                margin-top: -4%;
-                padding-top: 4%;
+                margin-top: -3%;
+                padding-top: 3%;
                 position: relative;
                 z-index: 11;
 
@@ -135,9 +136,9 @@
 
     .c-section__body {
 
-        ul:not(.o-list-bare) {
-            list-style-image: url('../img/icon-check.svg');
-        }
+        // ul:not(.o-list-bare) {
+        //     list-style-image: url('../img/icon-check.svg');
+        // }
 
     }
 
