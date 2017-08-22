@@ -239,10 +239,8 @@ layout: default
 
             <div data-ani-start class="o-layout__item u-1/2@tablet u-ani u-ani--fade-in u-ani--move-right">
 
-                <form id="contactform" class="c-form" action="https://formspree.io/office@profecto-consulting.com" method="post">
-                    <input type="hidden" name="_next" value="http://profecto-consulting.de/danke/" />
-                    <input type="hidden" name="_subject" value="Neue Nachricht vom Kontaktformular" />
-                    <input type="text" name="_gotcha" class="u-hidden-visually" />
+                <form id="contactform" class="c-form" action="https://api.formbucket.com/f/buk_XqlUJ9ZhSKp6HgbjWA5YYYEQ" method="post">
+                    <input type="text" name="_gotcha" class="u-hidden-visually">
 
                     <ul class="o-layout">
                         <li class="o-layout__item">
@@ -251,15 +249,15 @@ layout: default
                         </li>
                         <li class="o-layout__item u-1/2@tablet">
                             <label for="email">E-Mail <sup>*</sup></label>
-                            <input type="email" class="u-1/1" id="email" name="_replyto" autocomplete="home email" required>
+                            <input type="email" class="u-1/1" id="email" name="email" autocomplete="home email" required>
                         </li>
                         <li class="o-layout__item u-1/2@tablet">
                             <label for="phone">Telefon (optional)</label>
-                            <input type="tel" id="phone" name="home-phone" autocomplete="home tel">
+                            <input type="tel" id="phone" name="telefon" autocomplete="home tel">
                         </li>
                         <li class="o-layout__item">
                             <label for="message">Ihre Nachricht</label>
-                            <textarea id="message" name="message"></textarea>
+                            <textarea id="message" name="nachricht"></textarea>
                         </li>
                         <li class="o-layout__item u-2/3@tablet">
                             Mit <sup>*</sup> markierte felder sind Pflichtfelder.
