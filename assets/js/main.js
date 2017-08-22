@@ -52,16 +52,16 @@ document.ontouchmove = function (e) {
 /**
  * Affix Menu
  */
-var     nav     = $(".c-page-header__nav");
-        navscr  = "c-page-header__nav--scrolled";
-        navhgt  = $('.c-page-header__sticky').height();
+var nav     = $(".jsHeader"),
+    navhgt  = $('.jsHeaderSticky').height(),
+    navcss  = "is-scrolled";
 
 $(window).scroll(function() {
-  if( $(this).scrollTop() > navhgt ) {
-    nav.addClass(navscr);
-  } else {
-    nav.removeClass(navscr);
-  }
+    if( $(this).scrollTop() > navhgt ) {
+        nav.addClass(navcss);
+    } else {
+        nav.removeClass(navcss);
+    }
 });
 
 
