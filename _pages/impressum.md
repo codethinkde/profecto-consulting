@@ -19,7 +19,7 @@ header-offset:  -35%
 
 ### Vertreten durch
 
-<strong>Geschäftsführer</strong> Anja Konrad
+<strong>Geschäftsführer</strong> Daniel Knirsch
 
 ### Kontakt
 

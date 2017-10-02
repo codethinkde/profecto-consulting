@@ -16,6 +16,10 @@
     input.error:not(:focus) {
         background-color: rgba($color-alert, .2);
     }
+
+    .form-error {
+        color: $color-alert;
+    }
 }
 
 
