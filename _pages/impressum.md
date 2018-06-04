@@ -40,6 +40,10 @@ header-offset:  -35%
 
 Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: DE261339321
 
+### Bildnachweise
+
+[Pexels/Nita](https://www.pexels.com/photo/light-52910/), [Shutterstock/g-stockstudio](https://www.shutterstock.com/de/image-photo/planning-key-success-confident-young-man-289448885), [Shutterstock/only_kim](https://www.shutterstock.com/de/image-photo/engineer-electrician-working-on-replacement-solar-522046555), [Shutterstock/Patino](https://www.shutterstock.com/de/image-photo/aerial-view-on-berlin-skyline-tvtower-569325421)
+
 ## Streitschlichtung
 
 Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: [https://ec.europa.eu/consumers/odr](https://ec.europa.eu/consumers/odr).
