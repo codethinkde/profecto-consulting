@@ -1,25 +1,19 @@
 {
-    "name": "profecto-consulting-website",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.html",
-    "dependencies": {
-        "concurrently": "^3.5.0",
-        "inuitcss": "6.0.0-beta.4",
-        "jquery-form-validator": "^2.3.77",
-        "open-color": "^1.4.2",
-        "webpack": "^3.6.0"
-    },
-    "scripts": {
-        "dev":
-            "concurrently --kill-others -n \"jkyll,wbpck\" -c \"green.inverse,blue.inverse\" \"bundle exec jekyll serve --incremental\" \"webpack --watch\"; exit 0",
-        "build": "webpack --optimize-minimize && bundle exec jekyll build",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "Lukas Hermann",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/lhermann/profecto-consulting-website.git"
-    }
+  "name": "profecto-consulting-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "inuitcss": "6.0.0-beta.4",
+    "open-color": "^1.4.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lukas Hermann",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lhermann/profecto-consulting-website.git"
+  }
 }
